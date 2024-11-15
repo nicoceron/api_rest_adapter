@@ -58,7 +58,7 @@ def get_all_employees():
 # Optional: Root endpoint
 @app.route('/', methods=['GET'])
 def root():
-    return jsonify(message="Welcome to the Historic Figures API! Use /employees or /employee/<id> to access data."), 200
+    return jsonify(message="Welcome to the Historic Figures API! Use /employees or /employee/id to access data."), 200
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8080))
